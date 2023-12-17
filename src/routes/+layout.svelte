@@ -1,6 +1,7 @@
 <script>
 	// import "../app.pcss";
 	import './styles.css';
+	import Header from '../sections/Header.svelte';
 	import Asection from '../sections/Asection.svelte';
 	// import Bsection from '../sections/Bsection.svelte';
 	import Csection from '../sections/Csection.svelte';
@@ -15,15 +16,19 @@
 </script>
 
 <main>
-
+<Header/>
 	<section id="sectionA">
 	<Asection />
 	</section>
-	<!-- <Bsection /> -->git a
+	<!-- <Bsection /> -->
 	<Csection />
 	<DSection />
+	<section id="sectionE">
 	<ESection />
+	</section>
+	<section id="sectionF">
 	<FSection />
+	</section>
 	<GSection />
 	<JSection />
 	<HSection />
@@ -32,7 +37,7 @@
 	<Footer />
 </main>
 
-<slot />
+<!-- <slot /> -->
 
 <style>
 	main {
