@@ -1,7 +1,6 @@
 <script>
 	// import "../app.pcss";
 	import './styles.css';
-	import Header from '../Components/Header.svelte';
 	import Asection from '../sections/Asection.svelte';
 	// import Bsection from '../sections/Bsection.svelte';
 	import Csection from '../sections/Csection.svelte';
@@ -16,7 +15,7 @@
 </script>
 
 <main>
-	<Header />
+
 	<section id="sectionA">
 	<Asection />
 	</section>
