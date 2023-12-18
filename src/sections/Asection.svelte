@@ -5,7 +5,7 @@
 </script>
 
 <section class="A-section">
-  <h1>NOUS CRÉEONS <br />LES OUTILS <br /> DIGITAUX <br /> QU'IL VOUS FAUT.</h1>
+  <h1 >NOUS CRÉEONS LES OUTILS DIGITAUX QU'IL VOUS FAUT.</h1>
   <h2>Agence experte dans la création de site Web et dans le développement d’application.</h2>
   <img src={ordi} alt="Icon d'ornitateur en 3D" class="ordi" />
   <img src={port} alt="icon de téléphone portable en 3D" class="port" />
@@ -14,9 +14,7 @@
 </section>
 
 <style>
-
   .A-section {
-
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
@@ -26,6 +24,7 @@
     background-color: var(--colorO);
   }
   .A-section h1 {
+    word-wrap: break-word;
     grid-column: 2/10;
     grid-row: 1;
     margin-top: 20px;
@@ -35,6 +34,7 @@
     color: white;
   }
   .A-section h2 {
+    word-wrap: break-word;
     grid-column: 2/8;
     grid-row: 1;
     margin-top: 150px;
@@ -50,7 +50,7 @@
     height: 140px;
     margin-top: 30px;
     margin-left: 20px;
-    z-index: 1;
+    z-index: 2;
   }
   .port {
     grid-column: 11;
@@ -60,7 +60,7 @@
     transform: rotate(30deg);
     margin-top: 17px;
     margin-left: 10px;
-    z-index: 1;
+    z-index: 3;
   }
 
   .link {

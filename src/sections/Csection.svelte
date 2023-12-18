@@ -4,14 +4,13 @@
 
   onMount(() => {
     gsap.to(".robot", {
-      scale: 1.3,
-      duration: 0.4,
+      scale: 1.1,
+      duration: 0.2,
       scrollTrigger: {
         trigger: ".robot",
-        start: "top 300px",
-	end: "300px",
+        start: "top 400px",
+	end: "500px",
 	scrub: 2,
-	markers: true,
       },
 })
   });
