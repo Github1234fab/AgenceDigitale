@@ -1,6 +1,21 @@
 <script>
         import Dev from '../Assets/png-gralypho/Saly-11.png'
         import Carousel from '../Components/CarousselCards.svelte';
+
+	    import { onMount } from "svelte";
+
+	  onMount(() => {
+    gsap.to(".dev", {
+      scale: 1.1,
+      ease: "bounce.out(1,0.3)",
+      scrollTrigger: {
+        trigger: ".dev",
+        start: "top 600px",
+	end: "-300px",
+	scrub: 2,
+      },
+})
+  });
 </script>
 
 <section class="G-section">
@@ -49,6 +64,7 @@
                 grid-row: 1;
                 margin-left: 50px;
 		z-index: 1;
+		transform: scale(0.7);
         }
 		.halo {
 		grid-column: 7/12;

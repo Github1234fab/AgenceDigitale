@@ -87,13 +87,13 @@
     grid-column: 11;
     grid-row: 1;
     background-color: rgb(79, 68, 235);
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     filter: blur(30px);
     z-index: 0;
-    margin-left: 30px;
-    margin-top: 50px;
+    margin-left: 20px;
+    margin-top: 40px;
   }
 
   @media screen and (max-width: 768px) {

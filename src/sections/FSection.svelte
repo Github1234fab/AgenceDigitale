@@ -1,6 +1,20 @@
 <script>
 	import World from '../Assets/png-gralypho/Saly-12.png';
 	import Analist from '../Assets/png-gralypho/Saly-44.png';
+    import { onMount } from "svelte";
+
+	  onMount(() => {
+    gsap.to(".smartphone", {
+rotate: 390,
+      scale: 1,
+      scrollTrigger: {
+        trigger: ".smartphone",
+        start: "top 600px",
+	end: "-300px",
+	scrub: 2,
+      },
+})
+  });
 </script>
 
 <section class="F-section">

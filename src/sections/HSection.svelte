@@ -1,5 +1,21 @@
 <script>
 import Climber from '../Assets/png-gralypho/Saly-15.png';
+
+    import { onMount } from "svelte";
+
+	  onMount(() => {
+    gsap.to(".climb", {
+rotate: 360,
+      scale: 1,
+      scrollTrigger: {
+        trigger: ".climb",
+        start: "top 600px",
+	end: "-300px",
+	scrub: 2,
+      },
+})
+  });
+
 </script>
 
 <section class="H-section">

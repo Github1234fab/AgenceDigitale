@@ -1,9 +1,26 @@
 <script>
   import SpaceShip from "../Assets/png-gralypho/Saly-43.png";
   import Banner from "../Components/Banner.svelte";
+
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    gsap.to(".space-ship", {
+      scale: 1,
+     ease:"expoScale",
+      scrollTrigger: {
+        trigger: ".space-ship",
+        start: "top 500px",
+	end: "-200px",
+	scrub: 2,
+      },
+})
+  });
+
+
 </script>
 
-<section class="E-section">
+<section class="E-section" id="sectionE">
   <h1>Gralypho créer un service unique de produits numériques.</h1>
   <h2>Selon vos besoins, nous utiliserons Wix, ou wordpress, ou sqarspace, Shopify, woo Commerce (...).</h2>
   <img src={SpaceShip} alt="" class="space-ship" />
@@ -14,6 +31,7 @@
 
 <style>
   .E-section {
+    scroll-margin-top: 90px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
@@ -43,7 +61,7 @@
     grid-column: 8/12;
     height: 150px;
     width: 150px;
-    transform: rotate(50deg);
+    transform: scale(0.7) rotate(50deg);
     grid-row: 1;
     z-index: 1;
   }

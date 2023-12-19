@@ -2,14 +2,28 @@
   import Robot from "../Assets/png-gralypho/Saly-39.png";
   import { onMount } from "svelte";
 
+//   onMount(() => {
+//     gsap.to(".robot", {
+// rotate: 360,
+//       scale: 0.9,
+// //      ease: "elastic.out(1,0.3)",
+//       scrollTrigger: {
+//         trigger: ".robot",
+//         start: "top 500px",
+// 	end: "-200px",
+// 	scrub: 2,
+//       },
+// })
+//   });
+
   onMount(() => {
     gsap.to(".robot", {
-      scale: 1.1,
-      duration: 0.2,
+      scale: 0.9,
+     ease:"expoScale",
       scrollTrigger: {
         trigger: ".robot",
-        start: "top 400px",
-	end: "500px",
+        start: "top 500px",
+	end: "-200px",
 	scrub: 2,
       },
 })
@@ -71,6 +85,8 @@
     font-weight: 300;
   }
   .robot {
+	transform: rotate(0deg);
+	transform: scale(0.7);
     grid-column: 1/7;
     grid-row: 1;
     height: 180px;
