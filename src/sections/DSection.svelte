@@ -54,7 +54,7 @@
   <img src={Check} alt="" class="check" />
 
   <div class="wrapper-accordeon">
-    {#each infosCards as card}
+    {#each infosCards as card}	
       <CardsSectionB title={card.title} p={card.p} number={card.number} />
     {/each}
   </div>

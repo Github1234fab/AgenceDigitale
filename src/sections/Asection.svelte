@@ -9,7 +9,7 @@
   <h2>Agence experte dans la création de site Web et dans le développement d’application.</h2>
   <img src={ordi} alt="Icon d'ornitateur en 3D" class="ordi" />
   <img src={port} alt="icon de téléphone portable en 3D" class="port" />
-  <a class="link" href="#sectionE">Découvrir</a>
+  <!-- <a class="link" href="/#sectionE">Découvrir</a> -->
   <div class="halo"></div>
 </section>
 
@@ -63,7 +63,7 @@
     z-index: 3;
   }
 
-  .link {
+  /* .link {
     grid-column: 2/6;
     grid-row: 1;
     display: flex;
@@ -81,7 +81,7 @@
     font-size: 1em;
     margin-top: 220px;
     margin-bottom: 30px;
-  }
+  } */
 
   .halo {
     grid-column: 11;

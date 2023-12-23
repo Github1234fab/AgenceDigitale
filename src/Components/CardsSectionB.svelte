@@ -19,8 +19,8 @@
 
 		// Fermer le collapsible lorsque l'utilisateur clique en dehors de celui-ci
 		document.addEventListener('click', (event) => {
-			if (!accordeonButton.contains(event.target)) {
-				isOpen = false;
+			if (!accordeonButton.closest(event.target)) {
+				isOpen = true;
 			}
 		});
 	});
@@ -44,6 +44,8 @@
 		</div>
 	</div>
 </div>
+
+
 
 <style>
 	.show {

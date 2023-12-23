@@ -13,6 +13,7 @@
 	// import ISection from '../sections/ISection.svelte';
 	import JSection from '../sections/JSection.svelte';
 	import Footer from '../sections/Footer.svelte';
+	
 </script>
 
 <main>
